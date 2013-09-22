@@ -1,0 +1,19 @@
+=form_tag '/connection/login', class: 'form-horizontal offset2', id: 'form-connection' do
+    .control-group
+        =label_tag :host, 'Host:', class: 'control-label'
+        .controls
+            =text_field_tag :host, nil, placeholder: '127.0.0.1'
+    .control-group
+        =label_tag :port, 'Port:', class: 'control-label'
+        .controls
+            =text_field_tag :port, nil, placeholder: '6379'
+    .control-group
+        =label_tag :password, 'Password:', class: 'control-label'
+        .controls
+            =text_field_tag :password
+    .control-group
+        .controls
+            =button_tag 'Submit', class: 'btn'
+
+
+    

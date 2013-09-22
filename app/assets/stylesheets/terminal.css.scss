@@ -1,0 +1,11 @@
+@import "jquery.terminal";
+
+#terminal header{
+    width: 20%;
+    margin: 0 auto;
+    font: bold 110% serif;
+}
+
+.terminal-output ol{
+    padding-left: 10px;
+}

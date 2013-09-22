@@ -1,0 +1,16 @@
+.span8.offset2
+    -@params.each do |key, params|
+        %table{class: 'table table-bordered table-striped table-hover'}
+            %caption
+                = key.to_s.upcase
+            %thead
+                %tr
+                    %th.span4 Parameters
+                    %th.span6 Value
+            %tbody
+                -params.each do |p|                
+                    %tr
+                        %td
+                            = p
+                        %td.editable
+                            = @data[p]

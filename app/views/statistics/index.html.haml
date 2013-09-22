@@ -1,0 +1,42 @@
+=link_to 'Reset Info', statistics_path(resetstat: true), class: 'btn btn-danger', id: 'restart-info'
+.span11
+    -@params.each do |key, params|
+        .span5
+            %table{class: 'table table-bordered table-striped table-hover'}
+                %caption
+                    = key.to_s.upcase
+                %thead
+                    %tr
+                        %th.span4 Parameters
+                        %th.span6 Value
+                %tbody
+                    -params.each do |p|                
+                        %tr
+                            %td
+                                = p
+                            %td
+                                = @info[p.to_s]
+
+
+.span11
+    =link_to 'Reset SlowLog', statistics_path(resetslowlog: true), class: 'btn btn-danger', id: 'restart-slowlog'
+    %table{class: 'table table-bordered table-striped table-hover'}
+        %caption
+            = 'Slow Log'
+        %thead
+            %tr
+                %th.span2 ID
+                %th.span2 Time
+                %th.span2 Spend time
+                %th.span2 Comand
+        %tbody
+            -@slowlog.each do |log| 
+                %tr
+                    %td
+                        =log[0]
+                    %td
+                        =Time.at(log[1]).strftime("%d/%m/%Y %H:%M")
+                    %td
+                        =(log[2].to_f/1000000).to_s + ' s'
+                    %td
+                        =log[3].join(' ')

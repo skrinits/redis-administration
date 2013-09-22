@@ -1,0 +1,3 @@
+class Statistics < RedisModel
+
+end

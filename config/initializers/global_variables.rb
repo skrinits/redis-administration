@@ -1,0 +1,2 @@
+#redis object
+$redis = nil

@@ -1,0 +1,19 @@
+#select-db
+    Select DB:
+    =select_tag :select_db, options_for_select((0..(@dbs-1)).collect{|n| [n, n]}, @db_index), autofocus: true
+    =link_to 'Flush DB', '#', class: 'btn btn-danger', id: 'delete-button'
+
+.span5#keys_tree
+.span6#editor_key
+    =link_to '<i class="icon-pencil"></i>'.html_safe, '#',  class: 'btn btn-primary', title: 'Edit'
+    =link_to '<i class="icon-hdd"></i>'.html_safe, '#',  class: 'btn btn-primary', title: 'Save'
+    =link_to 'Cancel', '#',  class: 'btn btn-danger', title: 'Cancel'
+    =link_to '<i class="icon-trash"></i>'.html_safe, '#',  class: 'btn btn-danger', title: 'Delete'
+    =link_to '<i class="icon-plus-sign"></i>'.html_safe, '#',  class: 'btn btn-primary', title: 'Add New Key'
+
+
+    =text_field_tag 'key-name'
+    =text_area_tag 'edit-key-area', nil, disabled: true, rows: 10
+/ needed for portamento plugin
+= javascript_include_tag "portamento"
+
