@@ -1,0 +1,21 @@
+.navbar-text{
+  color: white !important;
+}
+
+a#logout:hover{
+  background: url(icon_off.png) no-repeat 50% 50%;
+  i{
+      visibility: hidden;
+  }
+}
+
+table caption{
+  font: bold italic 110% serif;
+  margin-bottom: 5px;
+  color:  #00004C;
+}
+
+a.anchor{
+  width: 0;
+  height: 0;
+}

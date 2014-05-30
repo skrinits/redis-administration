@@ -2,7 +2,7 @@ RedisAdministration::Application.routes.draw do
     root 'connection#login'
     #statistics
     resources :statistics, only: [:index]
-    patch '/statistics' => 'statistics#update'
+    delete "statistics/reset/:type" => 'statistics#destroy', as: :statistics_reset
     #configuration
     resources :configuration, only: [:index]
     patch '/configuration' => 'configuration#update'

@@ -1,0 +1,14 @@
+%table{class: 'table table-bordered table-striped table-hover'}
+  %caption
+    = title.to_s.upcase
+  %thead
+    %tr
+      %th.span6 Parameters
+      %th.span6 Value
+  %tbody
+    -params.each do |p|                
+      %tr
+        %td
+          = p
+        %td
+          = @info[p.to_s]

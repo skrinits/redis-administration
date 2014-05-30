@@ -1,23 +1,14 @@
 @import "terminal";
+@import "bootstrap_and_overrides";
+@import "default";
+
 @import "connection";
 @import "configuration";
 @import "keys";
-$baseFontSize: 16px;
-$baseLineHeight: 24px;
-$navbarText: #fff;
-@import "bootstrap";
+@import "statistics";
+
 
 body{
-
-}
-
-.navbar-text{
-    color: white !important;
-}
-
-a#logout:hover{
-    background: url(icon_off.png) no-repeat 50% 50%;
-    i{
-        visibility: hidden;
-    }
+  width: 80%;
+  margin: 0 auto;
 }

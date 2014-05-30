@@ -1,40 +1,40 @@
 !!! 5
 %html
-    %head
-        %title 
-            Redis Administration
-        =stylesheet_link_tag "application", media: "all", "data-turbolinks-track"=> true
-        = javascript_include_tag "application", "data-turbolinks-track"=> true
-        = csrf_meta_tags
-    %body.span12.offset2
-        <!--navigation-->
-        -unless controller.controller_name == 'connection'
-            %div{class: 'navbar navbar-inverse'}
-                .container
-                    .navbar-inner
-                        .brand
-                            =image_tag 'logo.png'
-                        %div{class: 'nav-collapse collapse navbar-inverse-collapse'}
-                            %ul.nav
-                                %li{class: controller.controller_name == 'statistics' ? 'active' : ''}
-                                    %a{href: statistics_path}
-                                        Statistic
-                                %li{class: controller.controller_name == 'configuration' ? 'active' : ''}
-                                    %a{href: configuration_index_path}
-                                        Configuration
-                                %li{class: controller.controller_name == 'terminal' ? 'active' : ''}
-                                    %a{href: terminal_index_path}
-                                        Terminal
-                                %li{class: controller.controller_name == 'keys' ? 'active' : ''}
-                                    %a{href: keys_path}
-                                        Keys                        
-                            %ul{class: "nav pull-right"}
-                                %li.navbar-text                                     
-                                    = RedisModel.redis.client.host + ':' + RedisModel.redis.client.port.to_s
-                                %li.divider-vertical
-                                %li
-                                    =link_to '<i class="icon-off icon-white"></i>'.html_safe, connection_logout_path, title: 'Log out',  id: :logout
-        <!--body-->
-        = yield
+  %head
+    %title 
+      Redis Administration
+    =stylesheet_link_tag "application", media: "all", "data-turbolinks-track"=> true
+    = javascript_include_tag "application", "data-turbolinks-track"=> true
+    = csrf_meta_tags
+    = favicon_link_tag 'favicon.ico'
+  %body
+    -unless controller.controller_name == 'connection'
+      %div{class: 'navbar navbar-inverse'}
+        .container
+          .navbar-inner
+            .brand
+              %a{href: statistics_path}
+                =image_tag 'logo.png'
+            %div{class: 'nav-collapse collapse navbar-inverse-collapse'}
+              %ul.nav
+                %li{class: controller.controller_name == 'statistics' ? 'active' : ''}
+                  %a{href: statistics_path}
+                    Statistic
+                %li{class: controller.controller_name == 'configuration' ? 'active' : ''}
+                  %a{href: configuration_index_path}
+                    Configuration
+                %li{class: controller.controller_name == 'terminal' ? 'active' : ''}
+                  %a{href: terminal_index_path}
+                    Terminal
+                %li{class: controller.controller_name == 'keys' ? 'active' : ''}
+                  %a{href: keys_path}
+                    Keys                        
+              %ul{class: "nav pull-right"}
+                %li.navbar-text                                     
+                  = RedisModel.redis.client.host + ':' + RedisModel.redis.client.port.to_s
+                %li.divider-vertical
+                %li
+                  =link_to '<i class="icon-off icon-white"></i>'.html_safe, connection_logout_path, title: 'Log out',  id: :logout
+    = yield
 
 

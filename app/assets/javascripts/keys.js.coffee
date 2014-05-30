@@ -183,7 +183,7 @@ $(->
 
 
         #edit block initialization
-        $('#editor_key').portamento()  
+        $('#editor_key').portamento()  if $('#editor_key').length > 0
 
         return
 )

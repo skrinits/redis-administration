@@ -1,4 +1,35 @@
-#form-connection{
-    margin-top: 20%;
+.form-connection{
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -175px;
+  margin-top: -100px;
+  table{
+    width: 100%;
+    height: 100%;
+    td{
+      label,input{
+        height: 3em;
+      }
+      label{
+        text-align: right;
+        line-height: 3em;
+      }
+      input{
+        margin-bottom: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    tr:last-child td:last-child{
+      text-align: center;
+      button{
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 

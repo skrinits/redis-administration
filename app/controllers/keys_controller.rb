@@ -7,6 +7,7 @@ class KeysController < ApplicationController
         respond_to do |format| 
             format.html{ 
                 @dbs= redis.config(:get, :databases)["databases"].to_i
+                @dbs = @dbs.zero? ? 12 : @dbs
                 @db_index = session[:db_index] || 0     
                 render :index
             }
