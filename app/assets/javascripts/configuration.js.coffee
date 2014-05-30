@@ -21,6 +21,7 @@ $(->
                             if jsonResult.notice
                                 messager.showSuccess(jsonResult.notice)
                             else
+                                $(this).text('')
                                 messager.showError(jsonResult.error)
                             return
 

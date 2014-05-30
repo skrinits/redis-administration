@@ -2,6 +2,7 @@
   =link_to 'Reset Info', statistics_reset_path('all'), class: 'btn btn-danger', method: :delete
   -@params.keys.each do |stat|
     =render partial: 'table', locals: {title: stat, params: @params[stat]}
+  %br
   %a.anchor{name: 'slowlog'}
   =link_to 'Reset SlowLog', statistics_reset_path('slowlog'), class: 'btn btn-danger', method: :delete
   %table{class: 'table table-bordered table-striped table-hover'}

@@ -1,17 +1,16 @@
-.editable{
-    input{
-        width: 60% !important;
-        display: block !important;
+.configuration{
+    width: 75%;
+    margin: 0 auto;
+    .attention{
+        color: #cccccc;
     }
-    button[type="submit"], button[type="cancel"]{        
-        margin-top: 10px;
-    }
-
-    button[type="submit"]{
-        margin-left: 15%;
-    }
-
-    button[type="cancel"]{
-        margin-left: 10px;
+    .editable{
+        cursor: pointer;
+        button[type="submit"], button[type="cancel"]{        
+            margin-top: 5px;
+        }
+        button[type="cancel"]{
+            margin-left: 5px;
+        }
     }
 }

@@ -16,7 +16,7 @@ class ConfigurationController < ApplicationController
 
     def update
         if redis.config(:set, params[:param], params[:value]) == 'OK'
-             render json: {value: params[:value], notice:  'Successfully changed'}
+             render json: {value: params[:value], notice:  'Parameter successfully changed'}
         else
             render json: {value: params[:value], error:  'Invalid parameter'}
         end
