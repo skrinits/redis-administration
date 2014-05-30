@@ -1,9 +1,5 @@
-//= require jquery.terminal
-//= require messager
-
-
 $( ->        
-        if $('#terminal').size() > 0
+        if $('#terminal').length > 0
             $('#terminal').terminal( 
                 (command, term) -> 
                     if command == 'reset'
@@ -25,7 +21,7 @@ $( ->
                 {
                     greetings: '',
                     height: 400,
-                    prompt: '$'
+                    prompt: '$>'
                 })
 
         return

@@ -74857,3 +74857,2220 @@ Started PATCH "/configuration" for 127.0.0.1 at 2014-05-30 15:14:07 +0400
 Processing by ConfigurationController#update as HTML
   Parameters: {"value"=>"300", "id"=>"", "param"=>"timeout"}
 Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:15:34 +0400
+
+
+Started GET "/terminal/command?command=dddd" for 127.0.0.1 at 2014-05-30 15:17:37 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dddd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dddd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (48.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.7ms)
+
+
+Started GET "/terminal/command?command=ddddddddddddddddddddddddddddddddddddddddd" for 127.0.0.1 at 2014-05-30 15:17:42 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"ddddddddddddddddddddddddddddddddddddddddd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'ddddddddddddddddddddddddddddddddddddddddd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.0ms)
+
+
+Started GET "/terminal/command?command=get+%27ggg%27" for 127.0.0.1 at 2014-05-30 15:17:50 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"get 'ggg'"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:18:59 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1370ms (Views: 1368.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:19:00 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 134ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:21:09 +0400
+
+
+Started GET "/terminal/command?command=get+%27k%27" for 127.0.0.1 at 2014-05-30 15:21:16 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"get 'k'"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=set+%27k%27" for 127.0.0.1 at 2014-05-30 15:21:23 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"set 'k'"}
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started GET "/terminal/command?command=set+%27k%27+111" for 127.0.0.1 at 2014-05-30 15:21:30 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"set 'k' 111"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=get+%27k%27" for 127.0.0.1 at 2014-05-30 15:21:36 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"get 'k'"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=select+1" for 127.0.0.1 at 2014-05-30 15:21:42 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"select 1"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=keys+%27*%27" for 127.0.0.1 at 2014-05-30 15:21:47 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys '*'"}
+  Rendered terminal/show.html.haml (2.1ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:22:49 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 1416ms (Views: 1415.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:22:50 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:30:35 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1360ms (Views: 1356.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:30:37 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:32:15 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1373ms (Views: 1371.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:32:17 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 84ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:33:04 +0400
+
+
+Started GET "/terminal/command?command=ls" for 127.0.0.1 at 2014-05-30 15:33:23 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"ls"}
+Completed 500 Internal Server Error in 3ms
+
+Redis::CommandError (ERR unknown command 'ls'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started GET "/terminal/command?command=sdd" for 127.0.0.1 at 2014-05-30 15:33:27 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"sdd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'sdd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:33:50 +0400
+
+
+Started GET "/terminal/command?command=wmfl" for 127.0.0.1 at 2014-05-30 15:33:51 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"wmfl"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'wmfl'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started GET "/terminal/command?command=smskm" for 127.0.0.1 at 2014-05-30 15:33:52 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"smskm"}
+Completed 500 Internal Server Error in 47ms
+
+Redis::CommandError (ERR unknown command 'smskm'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/terminal/command?command=" for 127.0.0.1 at 2014-05-30 15:33:52 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>""}
+Completed 500 Internal Server Error in 1ms
+
+TypeError (nil is not a symbol):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.5ms)
+
+
+Started GET "/terminal/command?command=s%2Csms" for 127.0.0.1 at 2014-05-30 15:33:53 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"s,sms"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 's,sms'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/terminal/command?command=msmms" for 127.0.0.1 at 2014-05-30 15:33:53 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"msmms"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'msmms'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.5ms)
+
+
+Started GET "/terminal/command?command=mssmsmkscmkskasm" for 127.0.0.1 at 2014-05-30 15:33:55 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"mssmsmkscmkskasm"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'mssmsmkscmkskasm'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started GET "/terminal/command?command=as" for 127.0.0.1 at 2014-05-30 15:33:55 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"as"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'as'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
+
+
+Started GET "/terminal/command?command=samasmscms" for 127.0.0.1 at 2014-05-30 15:33:56 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"samasmscms"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'samasmscms'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
+
+
+Started GET "/terminal/command?command=acmscasmslmsslmsma" for 127.0.0.1 at 2014-05-30 15:33:57 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"acmscasmslmsslmsma"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'acmscasmslmsslmsma'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+
+
+Started GET "/terminal/command?command=sas" for 127.0.0.1 at 2014-05-30 15:33:58 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"sas"}
+Completed 500 Internal Server Error in 1ms
+
+Redis::CommandError (ERR unknown command 'sas'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.3ms)
+
+
+Started GET "/terminal/command?command=asm" for 127.0.0.1 at 2014-05-30 15:33:58 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"asm"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'asm'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/terminal/command?command=samasmsamsksss" for 127.0.0.1 at 2014-05-30 15:34:00 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"samasmsamsksss"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'samasmsamsksss'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:36:32 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1371ms (Views: 1369.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:36:34 +0400
+
+
+Started GET "/terminal/command?command=mwnvweneevw" for 127.0.0.1 at 2014-05-30 15:37:18 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"mwnvweneevw"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'mwnvweneevw'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/terminal/command?command=dkwkvnwdv" for 127.0.0.1 at 2014-05-30 15:37:19 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dkwkvnwdv"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dkwkvnwdv'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (57.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.7ms)
+
+
+Started GET "/terminal/command?command=vdlwdnkv" for 127.0.0.1 at 2014-05-30 15:37:20 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"vdlwdnkv"}
+Completed 500 Internal Server Error in 1ms
+
+Redis::CommandError (ERR unknown command 'vdlwdnkv'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.8ms)
+
+
+Started GET "/terminal/command?command=dvwdlnvd" for 127.0.0.1 at 2014-05-30 15:37:21 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dvwdlnvd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dvwdlnvd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.8ms)
+
+
+Started GET "/terminal/command?command=vdwl+v" for 127.0.0.1 at 2014-05-30 15:37:22 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"vdwl v"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'vdwl'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.4ms)
+
+
+Started GET "/terminal/command?command=dvdvvjvjvn" for 127.0.0.1 at 2014-05-30 15:37:23 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dvdvvjvjvn"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dvdvvjvjvn'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
+
+
+Started GET "/terminal/command?command=dkkddkdkdkdkdkdkd" for 127.0.0.1 at 2014-05-30 15:37:29 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dkkddkdkdkdkdkdkd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dkkddkdkdkdkdkdkd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/terminal/command?command=dmsv%27sdv" for 127.0.0.1 at 2014-05-30 15:37:30 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dmsv'sdv"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dmsv'sdv'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.9ms)
+
+
+Started GET "/terminal/command?command=dvsdvndsjnsd" for 127.0.0.1 at 2014-05-30 15:37:31 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dvsdvndsjnsd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dvsdvndsjnsd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/terminal/command?command=dssdvndsnvd" for 127.0.0.1 at 2014-05-30 15:37:32 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dssdvndsnvd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dssdvndsnvd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.7ms)
+
+
+Started GET "/terminal/command?command=sdjnsdjnv" for 127.0.0.1 at 2014-05-30 15:37:35 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"sdjnsdjnv"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'sdjnsdjnv'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/terminal/command?command=dsnsdsd" for 127.0.0.1 at 2014-05-30 15:37:36 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dsnsdsd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dsnsdsd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started GET "/terminal/command?command=sdnd%27svndsjn" for 127.0.0.1 at 2014-05-30 15:37:37 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"sdnd'svndsjn"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'sdnd'svndsjn'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/terminal/command?command=njsdvnvjsdvd" for 127.0.0.1 at 2014-05-30 15:37:38 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"njsdvnvjsdvd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'njsdvnvjsdvd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.1ms)
+
+
+Started GET "/terminal/command?command=snvdnjnvdwvn" for 127.0.0.1 at 2014-05-30 15:37:40 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"snvdnjnvdwvn"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'snvdnjnvdwvn'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/terminal/command?command=ncsjdnsvnddvnjdjnjdndjvv" for 127.0.0.1 at 2014-05-30 15:37:45 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"ncsjdnsvnddvnjdjnjdndjvv"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'ncsjdnsvnddvnjdjnjdndjvv'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.1ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 15:40:08 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1383ms (Views: 1381.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 15:40:09 +0400
+
+
+Started GET "/terminal/command?command=dddddkkmcmcmkdkmdmkccc" for 127.0.0.1 at 2014-05-30 15:40:20 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dddddkkmcmcmkdkmdmkccc"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dddddkkmcmcmkdkmdmkccc'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started GET "/terminal/command?command=cdmmkwekmkmrg" for 127.0.0.1 at 2014-05-30 15:40:34 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"cdmmkwekmkmrg"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'cdmmkwekmkmrg'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.2ms)
+
+
+Started GET "/terminal/command?command=kermkkgmkr" for 127.0.0.1 at 2014-05-30 15:40:36 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"kermkkgmkr"}
+Completed 500 Internal Server Error in 1ms
+
+Redis::CommandError (ERR unknown command 'kermkkgmkr'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.1ms)
+
+
+Started GET "/terminal/command?command=mkrmrkrmkmkrmkrmker" for 127.0.0.1 at 2014-05-30 15:40:39 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"mkrmrkrmkmkrmkrmker"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'mkrmrkrmkmkrmkrmker'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.1ms)
+
+
+Started GET "/terminal/command?command=mkvmkmkrmkkremkrmkmkrrgnrgjg" for 127.0.0.1 at 2014-05-30 15:40:43 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"mkvmkmkrmkkremkrmkmkrrgnrgjg"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'mkvmkmkrmkkremkrmkmkrrgnrgjg'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.7ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 17:39:05 +0400
+Processing by TerminalController#index as HTML
+Redirected to http://127.0.0.1:3000/connection/login
+Filter chain halted as :check_exist_connection rendered or redirected
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/connection/login" for 127.0.0.1 at 2014-05-30 17:39:06 +0400
+Processing by ConnectionController#login as HTML
+  Rendered connection/login.html.haml within layouts/application (44.3ms)
+Completed 200 OK in 818ms (Views: 815.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:07 +0400
+
+
+Started POST "/connection/login" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+Processing by ConnectionController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/AAQp3cQEB10BQlK5gnZdpXyC4xcMTH7KUdd3CEQ7uk=", "host"=>"", "port"=>"", "password"=>"[FILTERED]", "button"=>""}
+Redirected to http://127.0.0.1:3000/statistics
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/statistics" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+Processing by StatisticsController#index as HTML
+  Rendered statistics/_table.html.haml (5.1ms)
+  Rendered statistics/_table.html.haml (0.5ms)
+  Rendered statistics/_table.html.haml (0.7ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.4ms)
+  Rendered statistics/_table.html.haml (0.6ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.1ms)
+  Rendered statistics/index.html.haml within layouts/application (68.8ms)
+Completed 200 OK in 129ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 17:39:09 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 17:39:11 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 17:40:58 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1475ms (Views: 1473.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 17:41:00 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 17:46:42 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 17:51:36 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1033ms (Views: 1031.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 17:51:37 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 17:52:25 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1020ms (Views: 1018.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 17:52:26 +0400
+
+
+Started GET "/terminal/command?command=dddddd" for 127.0.0.1 at 2014-05-30 17:53:42 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"dddddd"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'dddddd'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.7ms)
+
+
+Started GET "/terminal/command?command=qqqq" for 127.0.0.1 at 2014-05-30 17:53:47 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"qqqq"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'qqqq'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/terminal/command?command=qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq" for 127.0.0.1 at 2014-05-30 17:53:51 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/terminal/command?command=derfgh" for 127.0.0.1 at 2014-05-30 17:53:53 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"derfgh"}
+Completed 500 Internal Server Error in 2ms
+
+Redis::CommandError (ERR unknown command 'derfgh'):
+  app/controllers/terminal_controller.rb:8:in `show'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started GET "/terminal/command?command=sss" for 127.0.0.1 at 2014-05-30 17:59:11 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"sss"}
+  Rendered text template (0.1ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=asdfre" for 127.0.0.1 at 2014-05-30 17:59:15 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"asdfre"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 17:59:21 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (2.2ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 17:59:40 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (0.2ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=select+1" for 127.0.0.1 at 2014-05-30 17:59:45 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"select 1"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 17:59:49 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (1.0ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 18:00:10 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (0.5ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 18:03:04 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 1052ms (Views: 1050.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:03:05 +0400
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 18:03:08 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (3.9ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 18:03:47 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1008ms (Views: 1006.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:03:48 +0400
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 18:03:51 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (1.2ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 18:09:41 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "...bold 110% serif": expected "{", was ";"
+  (in /home/developer/projects/redis-administration/app/assets/stylesheets/application.css.scss:5)):
+    3:   %head
+    4:     %title 
+    5:       Redis Administration
+    6:     =stylesheet_link_tag "application", media: "all", "data-turbolinks-track"=> true
+    7:     = javascript_include_tag "application", "data-turbolinks-track"=> true
+    8:     = csrf_meta_tags
+    9:     = favicon_link_tag 'favicon.ico'
+  app/assets/stylesheets/terminal.css.scss:5
+  app/assets/stylesheets/application.css.scss:1
+  app/views/layouts/application.html.haml:6:in `_app_views_layouts_application_html_haml__2183064617284279715_70197251256340'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2014-05-30 18:09:41 +0400
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/developer/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/developer/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/developer/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.4ms)
+  Rendered /home/developer/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (165.8ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 18:10:10 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1060ms (Views: 1059.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:10:11 +0400
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 18:10:15 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (1.8ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 18:10:30 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (0.6ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=select+k" for 127.0.0.1 at 2014-05-30 18:10:37 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"select k"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal/command?command=keys" for 127.0.0.1 at 2014-05-30 18:10:42 +0400
+Processing by TerminalController#show as */*
+  Parameters: {"command"=>"keys"}
+  Rendered terminal/show.html.haml (0.2ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statistics" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+Processing by StatisticsController#index as HTML
+  Rendered statistics/_table.html.haml (3.2ms)
+  Rendered statistics/_table.html.haml (0.2ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.2ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.4ms)
+  Rendered statistics/_table.html.haml (0.4ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/index.html.haml within layouts/application (20.8ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statistics" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+Processing by StatisticsController#index as HTML
+  Rendered statistics/_table.html.haml (0.6ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.2ms)
+  Rendered statistics/_table.html.haml (0.2ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.3ms)
+  Rendered statistics/_table.html.haml (0.2ms)
+  Rendered statistics/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:11:00 +0400
+
+
+Started GET "/configuration" for 127.0.0.1 at 2014-05-30 18:11:11 +0400
+Processing by ConfigurationController#index as HTML
+  Rendered configuration/index.html.haml within layouts/application (46.8ms)
+Completed 200 OK in 73ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/configuration" for 127.0.0.1 at 2014-05-30 18:11:11 +0400
+Processing by ConfigurationController#index as HTML
+  Rendered configuration/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:11 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:11 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:11 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:11 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:11 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:11:12 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:13 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:13 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:11:13 +0400
+
+
+Started GET "/terminal" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+Processing by TerminalController#index as HTML
+  Rendered terminal/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:50 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:51 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:51 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:51 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:51 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:51 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:11:51 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:11:51 +0400
+
+
+Started GET "/keys" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+Processing by KeysController#index as HTML
+  Rendered keys/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/jquery.jeditable.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/jquery.terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/messager.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/configuration.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/tree.jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/terminal.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/portamento.js?body=1" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+
+
+Started GET "/keys?_=1401459113663" for 127.0.0.1 at 2014-05-30 18:11:53 +0400
+Processing by KeysController#index as JSON
+  Parameters: {"_"=>"1401459113663"}
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/key/content?key=%27k%27" for 127.0.0.1 at 2014-05-30 18:11:56 +0400
+Processing by KeysController#show as */*
+  Parameters: {"key"=>"'k'"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys?db_id=1&_=1401459113664" for 127.0.0.1 at 2014-05-30 18:12:04 +0400
+Processing by KeysController#index as JSON
+  Parameters: {"db_id"=>"1", "_"=>"1401459113664"}
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/key/content?key=doehatdo.ru" for 127.0.0.1 at 2014-05-30 18:12:05 +0400
+Processing by KeysController#show as */*
+  Parameters: {"key"=>"doehatdo.ru"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys?key=doehatdo.ru" for 127.0.0.1 at 2014-05-30 18:12:07 +0400
+Processing by KeysController#index as JSON
+  Parameters: {"key"=>"doehatdo.ru"}
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys?key=doehatdo.ru:statistics" for 127.0.0.1 at 2014-05-30 18:12:09 +0400
+Processing by KeysController#index as JSON
+  Parameters: {"key"=>"doehatdo.ru:statistics"}
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys?key=doehatdo.ru:statistics:orders" for 127.0.0.1 at 2014-05-30 18:12:10 +0400
+Processing by KeysController#index as JSON
+  Parameters: {"key"=>"doehatdo.ru:statistics:orders"}
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keys?key=doehatdo.ru:statistics:orders:1111" for 127.0.0.1 at 2014-05-30 18:12:12 +0400
+Processing by KeysController#index as JSON
+  Parameters: {"key"=>"doehatdo.ru:statistics:orders:1111"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/key/content?key=doehatdo.ru%3Astatistics%3Aorders%3A1111%3Ahits" for 127.0.0.1 at 2014-05-30 18:12:13 +0400
+Processing by KeysController#show as */*
+  Parameters: {"key"=>"doehatdo.ru:statistics:orders:1111:hits"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)

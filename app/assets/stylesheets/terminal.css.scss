@@ -1,11 +1,13 @@
 @import "jquery.terminal";
 
-#terminal header{
-    width: 20%;
-    margin: 0 auto;
+#terminal{
+  header{
     font: bold 110% serif;
-}
+    text-align: center;
+  }
 
-.terminal-output ol{
-    padding-left: 10px;
+  ol{
+    margin-left: 10px;
+    list-style-position: inside;
+  }
 }
