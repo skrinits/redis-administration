@@ -34,7 +34,7 @@
                   = RedisModel.redis.client.host + ':' + RedisModel.redis.client.port.to_s
                 %li.divider-vertical
                 %li
-                  =link_to '<i class="icon-off icon-white"></i>'.html_safe, connection_logout_path, title: 'Log out',  id: :logout
+                  =link_to '<i class="icon-off icon-white"></i>'.html_safe, connection_logout_path, title: 'Log out',  class: :logout
     = yield
 
 

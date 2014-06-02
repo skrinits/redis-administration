@@ -2,8 +2,8 @@
   color: white !important;
 }
 
-a#logout:hover{
-  background: url(icon_off.png) no-repeat 50% 50%;
+a.logout:hover{
+  background: url(exit.png) no-repeat 50% 50%;
   i{
       visibility: hidden;
   }

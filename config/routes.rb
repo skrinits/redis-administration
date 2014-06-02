@@ -10,10 +10,8 @@ RedisAdministration::Application.routes.draw do
     resources :terminal, only: [:index]
     get '/terminal/command' => 'terminal#show'
     #keys
-    resources :keys, only: [:index, :edit, :update]
-    delete '/keys/flushdb/:id' => 'keys#destroy_db'
-    delete '/keys/del' => 'keys#destroy'
-    get '/key/content' => 'keys#show'
+    resources :keys, only: [:index, :update, :create, :show]
+    delete '/keys/destroy/:type(/:key)' => 'keys#destroy'
     #connection
     get "connection/logout"
     get "connection/login"

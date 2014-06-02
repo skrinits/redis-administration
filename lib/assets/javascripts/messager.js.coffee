@@ -7,6 +7,7 @@ class Messager
 
     showSuccess: (message) ->
         html = getView(message, 'alert alert-success span7 offset2 flash-message')
+        $('body').find('.flash-message').hide()
         $('body').prepend(html)
         $alert = $('.alert')
         $alert.fadeOut(5000, ->
@@ -17,6 +18,7 @@ class Messager
 
     showError: (message) ->
         html = getView(message, 'alert alert-error span7 offset2 flash-message')
+        $('body').find('.flash-message').hide()
         $('body').prepend(html)
         $alert = $('.alert')
         $alert.fadeOut(10000, ->

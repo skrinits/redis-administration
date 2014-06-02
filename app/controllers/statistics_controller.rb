@@ -1,6 +1,6 @@
 class StatisticsController < ApplicationController
   before_action do
-    @params = {server: [:uptime_in_seconds, :uptime_in_days, :lru_clock],
+    @params = {server: [:redis_version, :uptime_in_seconds, :uptime_in_days, :lru_clock],
           clients: [:connected_clients, :client_longest_output_list, :client_biggest_input_buf,
                    :blocked_clients],
           memory: [:used_memory, :used_memory_human, :used_memory_rss,

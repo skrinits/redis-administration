@@ -1,6 +1,3 @@
-//= require jquery.jeditable
-//= require messager
-
 $(->
     $(".editable").editable("/configuration", { 
         indicator : "<img src='/assets/jeditable/indicator.gif'>",

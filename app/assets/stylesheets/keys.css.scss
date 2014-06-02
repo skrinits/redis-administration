@@ -1,35 +1,46 @@
-@import "jqtree";
-
-
 #select-db{
-    margin-top: -5px;
-    margin-left: 10px;
     select{
-        margin-top: 10px;
-        width: 7%;
+        margin-bottom: 0;
+    }
+    label{
+        display: inline-block;
     }
 }
 
-#portamento_container {
-    float:right; 
-    position:relative;
-}
-
-#portamento_container #editor_key {
-    float:none; 
-    position:absolute;
-}
-
-#portamento_container #editor_key.fixed {
-    position:fixed;
-}
-
-#editor_key{
-    visibility: hidden;
-}
-
-#edit-key-area, #key-name{
+#edit-key, #create-key{
+  width: 25%;
+  border: 2px solid #dddddd;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  a#close{
     display: block;
-    margin-top: 10px;
-    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    line-height: 18px;
+    font-size: 16px;    
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  form{
+    margin-bottom: 0;
+    input, textarea, #type-key{
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+
+    }
+    .outer{
+      text-align: center;
+      .controls{
+        display: inline-block;
+      }
+    }
+
+  }
 }
